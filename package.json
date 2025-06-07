@@ -1,0 +1,41 @@
+{
+  "name": "misaki-valo-wrapper",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ryumin",
+    "email": "riskyromero@proton.me",
+    "url": "https://github.com/RiskyRomero"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "valorant",
+    "valo",
+    "api",
+    "types",
+    "typescript",
+    "valorant-api",
+    "riot",
+    "games",
+    "misaki"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "axios": "^1.9.0"
+  }
+}
