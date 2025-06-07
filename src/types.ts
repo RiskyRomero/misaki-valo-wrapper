@@ -461,3 +461,13 @@ export interface Version {
   riotClientBuild: string;
   buildDate: Date;
 }
+
+export interface ApiResponse<T> {
+  status: number;
+  data: T;
+}
+
+export interface ErrorResponse {
+  status: number;
+  error: string;
+}
