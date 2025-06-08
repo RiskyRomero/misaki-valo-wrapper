@@ -1,9 +1,9 @@
 import axios from "axios"
 import type { ApiResponse, ErrorResponse } from "../types";
 
-export const fetchData = async <T = any>(endpoint: string): Promise<ApiResponse<T> | ErrorResponse> => {
+export const fetchData = async <T = any>(endpoint: string, params?: Record<string, any>): Promise<ApiResponse<T> | ErrorResponse> => {
   try {
-    const response = await axios.get<ApiResponse<T>>(`https://valorant-api.com${endpoint}`);
+    const response = await axios.get<ApiResponse<T>>(`https://valorant-api.com${endpoint}`, { params });
     return response.data;
   } catch (error: any) {
     if (axios.isAxiosError(error)) {
