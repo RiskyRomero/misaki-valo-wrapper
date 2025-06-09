@@ -12,7 +12,7 @@
   "types": "dist/index.d.ts",
   "private": false,
   "scripts": {
-    "build": "tsc"
+    "build": "unbuild"
   },
   "files": [
     "dist"
@@ -30,7 +30,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "unbuild": "^3.5.0"
   },
   "peerDependencies": {
     "typescript": "^5.8.3"
